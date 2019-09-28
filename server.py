@@ -213,7 +213,7 @@ class Session:
 
 class WebsocksServer:
 
-    def __init__(self, host: str = "127.0.0.1", port: int = 80):
+    def __init__(self, host: str = "127.0.0.1", port: int = 8080):
         logger.info(f"Websocks Server serveing on {host}:{port}")
         # 调用一个_link方法，开启webscket服务，监听端口
         asyncio.get_event_loop().run_until_complete(
